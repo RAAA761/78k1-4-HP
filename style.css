@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #f0f0f0;
+  margin: 0;
+
+  background-image: url('IMG_0284.png'); /* 画像ファイルのパス */
+  background-attachment: fixed;
+  background-size: cover;
+    background-position: center; /* 画像を中央に配置する */
+  background-repeat: repeat; /* 画像を繰り返さない */
+}
+
+.protected-container {
+  background-color: #fff;
+  padding: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.login-container
+{
+  background-color: #fff;
+  padding: 100px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+opactity: 0.5;
+}
+
+h1 {
+  margin-bottom: 200px;
+}
+
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
+
