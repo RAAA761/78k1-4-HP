@@ -15,16 +15,22 @@ body {
 }
 
 .protected-container {
-  background-color: #fff;
-  padding: 100px;
+
+  background-color: #fffafd;
+  padding: 180px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  position: absolute;
+  z-index: 1; /* 後ろに表示 */
 
 }
 
 
-.login-container
-{
+.login-container{
+position: absolute;
+  z-index: 3;
+  
   background-color: #fff;
   padding: 100px;
   border-radius: 3px;
@@ -33,7 +39,10 @@ opactity: 0.5;
 }
 
 h1 {
-  margin-bottom: 200px;
+  
+  margin-bottom: 400px;
+  font-family : "Dela Gothic One Static", sans-serif
+  
 }
 
 input[type="password"] {
@@ -63,3 +72,85 @@ button:hover {
   margin-top: 10px;
 }
 
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #057bff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.picture{
+top: 50%;
+  left: 200px;
+}
+
+.message {
+  position: absolute;
+  z-index: 5; /* 前に表示 */
+
+  font-size: 13px;
+  left: 150px;
+  top: 150px;
+
+  color: #616161;
+}
+
+.enter-password{
+  position: absolute;
+  z-index: 7;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.line{
+
+  width: 2px; /* 線の太さ */
+  height: 100%; /* 縦線の高さ、画面の高さに合わせる */
+  background-color: #adadad; /* 線の色 */
+  position: absolute; /* 絶対位置 */
+  left: 60%; /* 左から50%の位置に配置（中央） */
+  top: 70px; /* 上から0の位置に配置 */
+
+  position: absolute;
+  z-index: 10;
+}
+
+.topic-box-1{
+  
+width: 200px;   /* 横幅 */
+height: 150px;  /* 縦幅 */
+background-color: #f9d3e0; /* 色 */
+border: 2px solid #ee719e; /* 境界線 */
+border-radius: 5px; /* 角を少し丸くする（オプション） */
+  
+  position: absolute;
+  z-index: 11;
+}
+
+.topic-title-1{
+  padding-left: 10px;
+}
+
+.class-newsletter{
+  position: absolute;
+  z-index: 15;
+ left: 670px; 
+  top: 100px;
+  
+}
+
+.top-line{
+  height:5px;
+  width: 80px;
+
+  position: absolute;
+  z-index: 20;
+  top:100px;
+}
